@@ -21,5 +21,5 @@ def run_pylint():
         file_path = os.path.join(os.getcwd(), python_file)
         subprocess.run(['pylint', file_path], check=True)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     run_pylint()
